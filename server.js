@@ -29,4 +29,4 @@ app.get("/", async (req, res) => {
 });
 
 // ❗Export handler for Vercel
-module.exports = app;
+module.exports = (req, res) => app(req, res);
